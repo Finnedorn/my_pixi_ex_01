@@ -11,3 +11,4 @@ npm run dev
 <!-- installiamo quindi pixijs -->
 npm i pixi.js
 
+<!-- guida basata su questa pagina: https://waelyasmina.net/articles/pixi-js-tutorial-for-complete-beginners/#filters -->

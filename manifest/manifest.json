@@ -1,0 +1,36 @@
+{
+  "bundles": [
+    {
+      "name": "attitudes-first",
+      "assets": [
+        {
+          "alias": "psyduck_01",
+          "src": "/image/psyduck_atti_01.png",
+          "type": "image"
+        },
+        {
+          "alias": "psyduck_02",
+          "src": "/image/psyduck_atti_02.png",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "name": "attitudes-second",
+      "assets": [
+        {
+          "alias": "psyduck_03",
+          "src": "/image/psyduck_atti_03.png",
+          "type": "image"
+        },
+        {
+          "alias": "psyduck_04",
+          "src": "/image/psyduck_atti_04.png",
+          "type": "image"
+        }
+      ]
+    }
+  ]
+}
+
+
