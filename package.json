@@ -12,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@pixi/devtools": "^2.0.1",
     "concurrently": "^8.2.2",
     "typescript": "^5.5.4",
     "vite": "^5.4.2"

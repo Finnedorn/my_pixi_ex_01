@@ -24,22 +24,8 @@ import { Application, Assets, Sprite } from "pixi.js";
         width: 1000,
         height: 800,
 
-        // vogliamo che occupi l'intera grandezza della window? 
-        // width: window.innerWidth,
-        // height: window.innerHeight
-
-        // oppure potremmo usare la proprieta' nativa di pixieJs resizeTo
-        // resizeTo: window,
-        // resizeTo mi permette di fittare in qualunque elemento specifico
-
-        // vogliamo settare l'opacity del canvas? backgroundAlpha
-        // backgroundAlpha: 0.8
-
         // possiamo cambiare pure il backgroundColor (accetta solo i codici esadecimali rgb)
         backgroundColor: 0x1099bb
-
-        // vi e' inoltre la proprieta' antialias che ammorbidisce i contorni degli elementi nell'app
-        // antialias: true (di default e' settata su false per motivi di prestazioni)
 
     });
 
@@ -73,41 +59,12 @@ import { Application, Assets, Sprite } from "pixi.js";
     sprite.width = 200;
     sprite.height = 200;
     // o con scale x e y (che scala l'immagine sulla base delle sue dimensioni relative)
-    sprite.scale.x = 2;
-    sprite.scale.y = 2;
-    // oppure per un codice meno verboso
     sprite.scale.set(1,1);
-
     // per posizionare la sprite
-    // come per gli altri elementi visti in precedenza
-    sprite.x = 400;
-    sprite.y= 300;
-    // o con il camndo di posizione
-    sprite.position.x = 400;
-    sprite.position.y= 300;
-    // oppure per un codice meno verboso
     sprite.position.set(400,300);
-
-    // per inclinare la sprite
-    // possiamo avvalerci di skew (in questo caso incliniamo solo sull'asse x)
-    sprite.skew.x = Math.PI/ 4;
-    // oppure per un codice meno verboso
-    sprite.skew.set(Math.PI / 4, 0);
-
-    // per ruotare la sprite
-    // sprite.rotation = Math.PI / 4;
-    // nota bene: la rotation in Pixijs non si ancora a partire 
-    // dal centro dell'immagine ma a partire dall'angolo in alto a sinistra !!!
-    // per ovviare a questa condizione vi sono due metodi:
-    // settare il pivot (perno) su un valore assoluto
-    sprite.pivot.set(100, 200);
-    // settare un valore di anchor per la rotazione (disponibile solo per le Sprites)
     sprite.anchor.set(0.5, 0.5);
-
-    // Attenzione: settando un pivot o un anchor per la sprite, pure la posizione base della Sprite
-    // sullo Stage stessa cambiera' in quando le coordinate faranno riferimento non piu' alle impostazioni di default 
-    // ovvero all'angolo in alto a sinistra dell'immagine, ma al nuovo pivot o punto di ancoraggio !!!!
- 
     
+    
+
 
 })();
