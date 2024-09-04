@@ -104,7 +104,7 @@ import { Application, Assets, Spritesheet, AnimatedSprite } from "pixi.js";
         },
         // la proprietà meta serve per riconoscere il file che ci serve per il SpriteSheet
         meta: {
-          image: 'https://i.imgur.com/rjR8BeV.png',
+          image: 'image/frog.png',
           size: {w: 1750, h: 700}
         },
         // la proprietà animations contiene tutti i frames che componono il SpriteSheet ma divisi per animazione
